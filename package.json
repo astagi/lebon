@@ -2,7 +2,7 @@
   "author": "Andrea Stagi <stagi.andrea@gmail.com>",
   "license": "MIT",
   "name": "lebon",
-  "description": "",
+  "description": "A tiny, convenient wrapper around Noble to easily scan BLE peripherals",
   "version": "0.0.1",
   "repository": {
     "type": "git",
@@ -16,7 +16,8 @@
     "BLE",
     "bluetooth low energy",
     "bluetooth smart",
-    "central"
+    "central",
+    "sphero"
   ],
   "main": "./index.js",
   "engines": {

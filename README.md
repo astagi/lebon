@@ -1,5 +1,7 @@
 # Lebon
 
+A tiny, convenient wrapper around Noble to easily scan BLE peripherals
+
 ## Lebon peripheral discovered
 
     peripheral = {
