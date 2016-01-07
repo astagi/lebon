@@ -50,5 +50,6 @@ Example:
 
     peripherals = lebon.getDiscoveredPeripherals()
 
+## License
 
-MIT (c) 2016 Andrea Stagi
+MIT © 2016 Andrea Stagi
