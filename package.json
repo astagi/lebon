@@ -1,0 +1,41 @@
+{
+  "author": "Andrea Stagi <stagi.andrea@gmail.com>",
+  "license": "MIT",
+  "name": "lebon",
+  "description": "",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/astagi/lebon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/astagi/lebon/issues"
+  },
+  "keywords": [
+    "bluetooth",
+    "BLE",
+    "bluetooth low energy",
+    "bluetooth smart",
+    "central"
+  ],
+  "main": "./index.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "dependencies": {
+    "noble": "~1.2.1"
+  },
+  "devDependencies": {
+    "jshint": "latest",
+    "mocha": "~1.8.2",
+    "should": "~1.2.2",
+    "sinon": "~1.6.0",
+    "async": "~0.2.9",
+    "ws": "~0.4.31"
+  }
+}
