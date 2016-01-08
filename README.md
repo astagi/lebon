@@ -17,7 +17,7 @@ A tiny, convenient wrapper around Noble to easily scan BLE peripherals
 
 Example:
 
-    var lebon = require('./lebon');
+    var lebon = require('lebon');
 
     lebon.on('discover', function(device) {
       console.log('New device discovered! ' + device.name);
@@ -31,7 +31,7 @@ Example:
 
 Example:
 
-    var lebon = require('./lebon');
+    var lebon = require('lebon');
 
     var start = function(device) {
       console.log(device.uuid)
