@@ -22,12 +22,34 @@ var bb8LebonPeripheral = {
 describe('Lebon', function(){
 
   describe('#startScan()', function(){
+    var clock;
+    before(function () { clock = sinon.useFakeTimers(); });
+    after(function () { clock.restore(); });
     it('should emit discover on noble discover', function(){
       var lebon = new Lebon();
       var spy = sinon.spy();
       lebon.on('discover', spy);
       lebon.startScan();
       noble.emit('discover', bb8Peripheral);
+      spy.called.should.equal(true);
+    });
+    it('should emit scanStart on noble stateChange', function(){
+      var lebon = new Lebon();
+      var spy = sinon.spy();
+      lebon.on('scanStop', spy);
+      lebon.startScan(2000);
+      noble.emit('stateChange', 'poweredOff');
+      spy.called.should.equal(true);
+    });
+    it('should call stopScan if timeout is defined', function(){
+      var lebon = new Lebon();
+      var spy = sinon.spy();
+      lebon.on('scanStop', spy);
+      lebon.startScan(2000);
+      noble.emit('stateChange', 'poweredOn');
+      clock.tick(1999);
+      spy.called.should.equal(false);
+      clock.tick(1);
       spy.called.should.equal(true);
     });
   });

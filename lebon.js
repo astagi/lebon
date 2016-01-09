@@ -25,11 +25,13 @@ Lebon.prototype.startScan = function (timeout) {
     if (state === 'poweredOn') {
       noble.startScanning();
       this.emit('scanStart');
-    }
-    if (timeout) {
-      setTimeout(function() {
-        self.stopScan();
-      }, timeout);
+      if (timeout) {
+        setTimeout(function() {
+          self.stopScan();
+        }, timeout);
+      }
+    } else {
+      self.stopScan();
     }
   });
 }
