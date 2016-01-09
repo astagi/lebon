@@ -3,6 +3,8 @@ var sinon = require('sinon');
 var Lebon = require('../lebon');
 var noble = require('noble');
 
+noble.startScanning = function () {};
+
 var bb8Peripheral = {
   peripheral: 'BB8',
   uuid: '123456',

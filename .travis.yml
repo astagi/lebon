@@ -1,0 +1,32 @@
+language: node_js
+node_js:
+  - '0.10'
+  - '0.12'
+  - '4.0'
+  - '4.1'
+  - '4.2'
+  - '5.0'
+  - '5.1'
+env:
+  - CXX=g++-4.8
+before_install:
+  - sudo apt-get update
+  - "mkdir -p ~/.npm"
+install:
+  - npm install -g node-gyp-install
+  - node-gyp-install
+  - npm install -g mocha
+  - npm install -g istanbul
+  - npm install -g codecov
+  - npm install
+script:
+  - istanbul cover _mocha --report lcovonly -- -R spec
+  - codecov
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+    - g++-4.8-multilib
+    - libbluetooth-dev
