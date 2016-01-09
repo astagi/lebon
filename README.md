@@ -8,7 +8,7 @@ A tiny, convenient wrapper around Noble to easily scan BLE peripherals
       name: "Name",
       uuid: "UUID",
       address: "BT address",
-      noble_peripheral: <Noble Peripheral Object>
+      noblePeripheral: <Noble Peripheral Object>
     };
 
 ## Start scanning devices

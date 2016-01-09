@@ -16,7 +16,7 @@ Lebon.prototype.startScan = function (timeout) {
       name: peripheral.advertisement.localName,
       uuid: peripheral.uuid,
       address: peripheral.address,
-      noble_peripheral: peripheral
+      noblePeripheral: peripheral
     };
     self._discoveredPeripherals.push(discoveredPeripheral);
     self.emit('discover', discoveredPeripheral);
