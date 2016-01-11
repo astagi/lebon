@@ -2,6 +2,7 @@
 
 A tiny, convenient wrapper around Noble to easily scan BLE peripherals
 
+[![npm version](https://img.shields.io/npm/v/lebon.svg)](https://www.npmjs.com/package/lebon)
 [![Build Status](https://travis-ci.org/astagi/lebon.svg?branch=master)](https://travis-ci.org/astagi/lebon) [![codecov.io](https://codecov.io/github/astagi/lebon/coverage.svg?branch=master)](https://codecov.io/github/astagi/lebon?branch=master)
 
 ## Lebon peripheral discovered
