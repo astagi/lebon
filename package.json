@@ -3,7 +3,7 @@
   "license": "MIT",
   "name": "lebon",
   "description": "A tiny, convenient wrapper around Noble to easily scan BLE peripherals",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/astagi/lebon.git"
